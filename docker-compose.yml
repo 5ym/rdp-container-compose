@@ -12,3 +12,4 @@ services:
     volumes:
       - ./config:/config
     restart: always
+    shm_size: "1gb"
