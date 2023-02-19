@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  rdp:
+    image: lscr.io/linuxserver/rdesktop:arch-kde
+    ports:
+      - target: 3389
+        published: 3389
+        protocol: tcp
+        mode: host
+    environment:
+      - TZ=Asia/Tokyo
+    volumes:
+      - ./config:/config
+    restart: always
