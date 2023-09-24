@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   rdp:
     image: lscr.io/linuxserver/rdesktop:arch-xfce
