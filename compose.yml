@@ -4,7 +4,6 @@ services:
     ports:
       - target: 3389
         published: 3389
-        protocol: tcp
         mode: host
     environment:
       - TZ=Asia/Tokyo
